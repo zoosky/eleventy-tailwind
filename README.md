@@ -16,3 +16,5 @@ To run
 To run tailwind, use
 
     npx tailwindcss -i ./tailwind.css -o ./_site/css/styles.css --watch
+
+Demo https://elegant-genie-4e7cd8.netlify.app/
