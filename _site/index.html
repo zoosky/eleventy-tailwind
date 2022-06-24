@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Eleventy Tailwind</h1>
-    <p>Lore ipsum sunt stunt.</p>
-</body>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="/css/styles.css" crossorigin="anonymous"/>
+        <title>Document</title>
+    </head>
+    <header class="w-full bg-white flex justify-between items-center px-6 py-4 md:px-8">
+    <a href="#">
+        <img src="/assets/logo.svg" alt="logo" class="h-12" />
+    </a>
+    <nav>
+        <ul class="flex gap-10 font-semibold text-sm">
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/about">About</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+    <body class="min-h-screen flex flex-col">
+        
+<section class="bg-gradient-to-b from-orange-400 via-purple-500  to-blue-500  py-12 px-8">
+    <div class="mx-auto grid max-w-5xl grid-cols-1 items-center gap-12 py-6 md:grid-cols-2 md:py-12">
+        <img src="/assets/hero.jpg" alt="" class="max-h-[32rem]"  />
+        <div>
+            <h1 class="text-4xl font-bold leading-[1.1] text-green-500 md:text-5xl">
+                Hello, world!
+            </h1>
+            <p class="pt-4 text-lg leading-[1.5] text-white ">
+                Lorem ipsum dolor it amet conectetur adipisicing elit. Saepe veniam sed maxime qui enim architecto quo.
+            </p>
+        </div>
+    </div>
+</section>
+        <footer class="bg-white w-full text-center px-6 md:px-8 py-2 mt-auto">
+
+    <small>Copyrights &copy; 2022 | All rights reserved.</small>
+
+</footer>
+    </body>
 </html>
