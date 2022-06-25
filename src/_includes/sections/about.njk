@@ -10,6 +10,16 @@
         minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
         nisl ut aliquip ex ea commodo consequat.
       </p>
+    <div class="flex flex-wrap justify-center">
+     {% for blg in collections.blogs %}
+     <ul>
+     <li>
+        <a href="{{ blg.url }}">{{blg.data.title}} </a>
+
+     </li>
+     </ul>
+     {% endfor %}
+    </div>
 
   </div>
 </section>
