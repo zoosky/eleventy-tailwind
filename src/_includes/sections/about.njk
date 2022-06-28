@@ -12,14 +12,17 @@
 <section class="py-12 px-12">
   <div class="mx-auto max-w-5xl">
     <div class=" ">
-      <ul class="list-decimal list-inside">
+      <ul class="text-5xl list-square" >
         {% for blg in collections.blogs %}
-          <li>
-            <a href="{{ blg.url }}">{{ blg.data.title }}
+          <li class="list-item">
+            <h1 class="text-5xl">
+            <a href="{{ blg.url }}"
+            class="">{{ blg.data.title }}
             </a>
+            </h1>
           </li>
         {% endfor %}
       </ul>
     </div>
-  </div>
+
 </section>
