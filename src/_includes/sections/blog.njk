@@ -1,26 +1,26 @@
 <section class="bg-gradient-to-b from-orange-400 via-purple-500  to-blue-500  py-12 px-8">
-  <div class="mx-auto max-w-5xl">
-    <h2 class="text-4xl  md:text-5xl font-bold sm:text-center md:text-left text-green-500">Blog Articles</h2>
-    <p class="mt-4 sm:text-center md:text-left text-white">
-      Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat fac er possim
-      assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-      dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-      lobortis nisl ut aliquip ex ea commodo consequat.
-    </p>
-  </div>
+    <div class="mx-auto max-w-5xl">
+        <h2 class="text-4xl  md:text-5xl font-bold sm:text-center md:text-left text-green-500">Blog Articles</h2>
+        <p class="mt-4 sm:text-center md:text-left text-white">
+            Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat fac er possim
+            assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+            lobortis nisl ut aliquip ex ea commodo consequat.
+        </p>
+    </div>
 </section>
 <section class="py-12 px-12">
-  <div class="mx-auto max-w-3xl">
-    <div class=" ">
-      <ul class="text-5xl list-square">
-        {% for blg in collections.blog %}
-          <li class="list-item">
-            <h1 class="text-5xl">
-              <a href="{{ blg.url }}" class="">{{ blg.data.title }}
-              </a>
-            </h1>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </section>
+    <div class="mx-auto max-w-3xl">
+        <div class=" ">
+            <ul class="text-3xl list-square">
+                {% for blg in collections.blog %}
+                    <li class="list-item">
+                        <h1 class="">
+                            <a href="{{ blg.url }}" class="">{{ blg.data.title }}
+                            </a>
+                        </h1>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
