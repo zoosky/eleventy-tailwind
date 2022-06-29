@@ -4,12 +4,20 @@
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" href="/assets/css/styles.css" crossorigin="anonymous"/>
-        <title>{{ url }}</title>
+        <link rel="stylesheet" href="/assets/css/styles.css?v={% version %}" crossorigin="anonymous"/>
+        <title>
+            {% block title %}Does it work?{% endblock %}
+        </title>
+        {% if description %}
+            <meta name="description" content="{{ description }}"/>
+        {% endif %}
+        <script defer src="/js/alpine.js?v={% version %}"></script>
     </head>
     {% include 'partials/_header.njk' %}
-    <body class="min-h-screen flex flex-col">
-        {{ content | safe }}
+    <body class="flex flex-col min-h-screen">
+        {% block content %}
+            {{ content | safe }}
+        {% endblock %}
         {% include 'partials/_footer.html' %}
     </body>
 </html>
