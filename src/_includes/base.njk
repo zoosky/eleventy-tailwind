@@ -13,8 +13,8 @@
         {% endif %}
         <script defer src="/js/alpine.js?v={% version %}"></script>
     </head>
-    {% include 'partials/_header.njk' %}
     <body class="flex flex-col min-h-screen">
+        {% include 'partials/_header.njk' %}
         {% block content %}
             {{ content | safe }}
         {% endblock %}
